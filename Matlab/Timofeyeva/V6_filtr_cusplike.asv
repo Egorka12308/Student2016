@@ -1,6 +1,6 @@
 function [s] = V6_filtr_cusplike(y, l, k, m1, m2) % y, l, k, m1, m2 - входные параметры
 S=length(y); %размер вектора
-for n=1:S; 
+for n=1:S; % 
     dk(n)=y(n);
  if n>k %условие дл€ y(n-k)>0
      dk(n)=y(n)-y(n-k); 
