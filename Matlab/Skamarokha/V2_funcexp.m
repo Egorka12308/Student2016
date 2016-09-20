@@ -1,4 +1,4 @@
-function [y]=V2(A,t,tau1,tau2)
+function [y]=V2_funcexp(A,t,tau1,tau2)
 
 if t<0
     y=0;    
