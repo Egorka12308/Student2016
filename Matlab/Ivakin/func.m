@@ -1,7 +1,7 @@
-function y = func(t, A, t1, t2)
+function y = func(t, t1, t2)
     if t < 0
         y = 0;
     else
-        y = A * (exp(-t/t1) - exp(-t/t2));
+        y = (exp(-t/t1) - exp(-t/t2)); % заданная функция
     end
 end
