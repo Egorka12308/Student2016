@@ -1,5 +1,5 @@
 function y = trap_filter(i, k, l, t1, t2, M)
-% задаём каждую функцию фильтра
+% define filter functions
     function y = r(i)
         y = p(i) + M * d(i);
     end
@@ -24,6 +24,6 @@ function y = trap_filter(i, k, l, t1, t2, M)
             y = p(i - 1) + d(i);
         end
     end
-% считаем значение, которое даст фильтр
+% calculate filter
     y = s(i);
 end
