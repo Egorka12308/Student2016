@@ -7,9 +7,7 @@ A=1;
 tau1=16;
 tau2=5;
 %% вызов функции
-[y] = V6_funcexp( A, t, tau1, tau2 );
-%% построение графика
-plot(t,y,'m') 
+[y] = V6_funcexp( A, t, tau1, tau2 ); 
 %% параметры фильтра
 l=6;
 k=13;
@@ -17,5 +15,9 @@ m1=16;
 m2=1;
 %% вызов функции фильтра
 [s] = V6_filtr_cusplike(y, l, k, m1, m2);
-%% построение графика
-plot(t,s/275,'k')
+%% Нормировка
+Ymax=max(y);
+Smax=max(s);
+%% построение графиков
+plot(t,y/Ymax,'m')
+plot(t,s/Smax,'k')
