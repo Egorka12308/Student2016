@@ -1,13 +1,10 @@
-function f = func11(A,T1,T2,t)%функция вариант 7
+function [f] = func11(A,T1,T2,t)%функция экспоненты
 
 if t < 0
-f (t) = 0;
-end
-if t >= 0
-f  = A * ((exp(-t/T1))-(exp(-t/T2)));
-
+f = 0;
+else
+f  = A * ((exp(-t/T1))-(exp(-t/T2))); %вычисляем значения функции экспоненты
 
 end
 
-
-
+end
