@@ -1,5 +1,7 @@
-function [y] = var7_exp(A, t, T1, T2)
-
-          y = A * (exp(-t / T1) - exp(-t / T2));
-          
+function [y] = var7_exp(A, t, T1, T2)% задаем функцию 
+ if t >= 0 %условие, при котором должна отрисовываться функция
+          y = A * (exp(-t / T1) - exp(-t / T2));% сама функция
+ else 
+     y = 0
+ end
 end          
